@@ -15,45 +15,12 @@ The first handful of queries study University of Maryland shuttle stops which ha
 For our clients who check out our online restaurant review services, we executed a whole different set of SQL queries on Tableau to create dashboards that are fed by live data and updated dynamically. These Tableau dashboards were then presented in the form of standalone HTML pages to give dynamic insights to people searching for restaurants to dine in and are clueless about the distribution of restaurants around the UMD campus. To add to this, a review classification system is what we implemented that takes all the reviews of a restaurant as input, uses tokenization, lemmatization and Named Entity Recognition to classify the reviews as positive or negative. This way a completely new client would know the summary reports of the restaurants nearby the UMD campus.
 
 
-Describe business processes/transactions in sentences.
-●  	There are various restaurants listed on the company’s website. Each restaurant is described by a unique identifier, name, address (including street name, city, state and postal code), phone number, coordinates (described by the latitude and longitude in decimal format), the expensiveness of the restaurant(on a scale of 1 to 5), whether or not it makes deliveries or takes pick-ups (labeled as resTransactionType), average rating (shown as the number of stars from 0 to 5) and the total number of its reviews in the database. Moreover, the schedule of the time when the restaurant opens and closes from Monday to Sunday is also stored. 
-●  	Foods that a restaurant sells can fall into various categories (Mexican, Italian, etc). Each category is assigned a unique identifier and gets its name as well. Each restaurant may belong to one or more categories, depending on the type of dishes it serves. A category of food can be served by multiple restaurants. 
-●  	Customers can eat at any restaurant and decide whether to leave reviews for restaurants where he or she visits after meals. But he or she can leave no more than one review for each meal. Furthermore, a customer can write many online reviews to a restaurant and the number of reviews should be equal to that of visits. Each customer has a unique customer identifier and a customer name. A review is stored by its unique identifier, the rating (the number of stars) that customer assess the restaurant and the text content of the review.
-●	Even though a customer is logged off for some reason, reviews provided by him or her for restaurants will remain the same. Besides, if a restaurant breaks down or move outside of the surveyed area, reviews that the restaurant obtains will not deleted or changed with the withdrawal of the restaurant.
-●  	Apart from restaurant information, UMD shuttles have at least one station on their scheduled routes.  The UMD shuttle is identified by a unique identifier, bus number, bus name, bus final destination. 
-●	Also, there is a stop, among all stations at which shuttles stop routinely, nearest to each restaurant, compared with other stations. Meanwhile, restaurants can share the same nearest stop or have their own nearest stops. The shuttle stops are recorded by unique stop identifiers, and corresponding stop coordinates (including the latitude and longitude information).
-●  	TERPcravings allows customers to drop their reviews in the comment section for the restaurant that they have dined in.
 
-Entities, Attributes and Primary Keys
-●	Restaurant(resId, resName, resStreet, resCity, resState, resPostalCode, resPhoneNo, resLat, resLong, resStars, resRevCNT, resPrice, resTransactionType, monStartTime, monEndTime, tuesStartTime, tuesEndTime, wedStartTime, wedEndTime, thurStartTime, thurEndTime, friStartTime, friEndTime, satStartTime, satEndTime, sunStartTime, sunEndTime)
-●	Category(categoryId, categoryName)
-●	Customer(cusId, cusName)
-●	Review(revId, revRating, revText)
-●	Shuttle(busId, busNo, busName, busFinalDest)
-●	Stop(stopId, stopName, stopLat, stopLong)
-
-
-
-
-Relationships, Attributes, Degrees, Participating Entities and Constraints
-●	Have: binary relationship:
-1 shuttle to 1 or more stops
-1 stop to 1 or more shuttles
-●	Belong: binary relationship:
-1 restaurant to 1 or more categories
-1 category to 0 or more restaurants
-●	Be nearest(walkTimeToRes): binary relationship
-1 restaurant to 1 stop
-1 stop to 1 or more restaurants
-●	Write: ternary relationship:
-1 customer and 1 restaurant to 0 or more reviews
-1 customer and 1 review to 0 or 1 restaurant
-1 review and 1 restaurant to 0 or 1 customer
-
-
-### Google Doc Links:
+### Links to Results:
 1. Finalized ER Schema and Diagram: https://drive.google.com/file/d/1PrFhhRdhP61D4BCFfw33K_vez5adlGKZ/view?usp=sharing
+2. 
 
 
-### Team members: Aishwarya Bhangale, Cindy Chang, Jiakun Luo, Huyen Nguyen, Wenjing Cui.
+### Team members: 
+Cindy Chang, Aishwarya Bhangale, Jiakun Luo, Huyen Nguyen, Wenjing Cui.
 
