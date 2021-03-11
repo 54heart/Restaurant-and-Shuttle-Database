@@ -1,5 +1,7 @@
 # TERPcravingz
 
+link to powerpoint presentation: https://drive.google.com/file/d/1lxQv1qxlU_xeY6DYMoHoLMKiPmDTG3F3/view?usp=sharing
+
 ### Business Scenario:
 TERPCravingz is a medium sized restaurant review platform that showcases restaurant information, restaurant review information, and UMD Shuttles to the restaurant of choice.
  
