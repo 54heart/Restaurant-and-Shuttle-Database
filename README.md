@@ -1,6 +1,11 @@
 # TERPcravingz
+1. ER Diagram and Relational Schema Design: https://drive.google.com/file/d/1n8UvmrJoJ5S8OoDT1MA821epDt5u6AMj/view?usp=sharing
+2. PPT presentation: https://drive.google.com/file/d/1lxQv1qxlU_xeY6DYMoHoLMKiPmDTG3F3/view?usp=sharing
 
-link to powerpoint presentation: https://drive.google.com/file/d/1lxQv1qxlU_xeY6DYMoHoLMKiPmDTG3F3/view?usp=sharing
+### Data Sources:
+We use Yelp API (https://www.yelp.com/developers/documentation/v3/get_started) and Nextbus API (http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf) to retrieve information about restaurants and shuttle-UM routes. The data are originally in JSON and XML formats. We convert them into Excel format in order to apply pre-processing processes. Our data include data of 2793 restaurants in 15 cities nearby University of Maryland with information of 7980 reviews and 5525 customers; and data of 25 Shuttle-UM route schedules with 315 bus stops.
+
+
 
 ### Business Scenario:
 TERPCravingz is a medium sized restaurant review platform that showcases restaurant information, restaurant review information, and UMD Shuttles to the restaurant of choice.
@@ -18,9 +23,7 @@ For our clients who check out our online restaurant review services, we executed
 
 
 
-### Links to Results:
-1. Finalized ER Schema and Diagram: https://drive.google.com/file/d/1PrFhhRdhP61D4BCFfw33K_vez5adlGKZ/view?usp=sharing
-2. 
+
 
 
 ### Team members: 
